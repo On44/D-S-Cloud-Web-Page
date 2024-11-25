@@ -1,0 +1,132 @@
+.services-page {
+  font-family: 'Arial', sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1200px;
+}
+
+.services-header {
+  text-align: center;
+  background: linear-gradient(135deg, #4caf50, #28a745);
+  color: white;
+  padding: 50px 20px;
+}
+
+.services-header h1 {
+  font-size: 3.5em;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.services-header p {
+  font-size: 1.2em;
+  color: #f0f0f0;
+  margin-top: 10px;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.service-item {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  margin: 20px;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.5s forwards;
+}
+
+.service-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-item h2 {
+  font-size: 1.6em;
+  color: #4caf50;
+  margin-top: 20px;
+}
+
+.service-item p {
+  font-size: 1em;
+  color: #555;
+  margin-top: 15px;
+}
+
+.service-icon {
+  font-size: 4em;
+  color: #4caf50;
+  margin-bottom: 20px;
+}
+
+.cta-section {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #e4e8e4, #c8cbc8);
+  color: #4caf50;
+  border: 3px solid(#4caf50);
+  border-radius: 10px;
+}
+
+.cta-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.cta-section p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  padding: 12px 30px;
+  font-size: 1.2em;
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #218838;
+}
+
+.cta-button:focus {
+  outline: 3px solid #218838;
+  outline-offset: 2px;
+}
+
+@media (max-width: 768px) {
+  .services-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-item {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  .cta-section {
+    padding: 30px 10px;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
